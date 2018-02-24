@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+
+        .gallery-item{
+            border: 1px solid #ccc;
+        }
+        
+        .gallery-item:hover{
+            border: 1px solid #777;
+        }
+        
+        .gallery-item img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .description
+        {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .responsive{
+            padding: 0 5px;
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width:700px)
+        {
+            .responsive{
+                width: 50%;
+                margin-top: 5px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="gallery">
+        <div class="responsive">
+            <div class="gallery-item">            
+                <a href="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" target="_blank">                
+                    <img src="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" alt="">
+                </a>  
+                <div class="description">
+                    description about image gallery item
+                </div>          
+            </div>
+        </div>
+        <div class="responsive">   
+            <div class="gallery-item">            
+                <a href="https://c1.staticflickr.com/5/4217/34953080641_3fb097e14e_k.jpg" target="_blank">                
+                    <img src="https://c1.staticflickr.com/5/4217/34953080641_3fb097e14e_k.jpg" alt="">   
+                </a>            
+                <div class="description">
+                    description about image gallery item
+                </div>
+            </div>
+        </div>
+        <div class="responsive">    
+            <div class="gallery-item">            
+                <a href="https://c1.staticflickr.com/5/4241/34978053381_333e903ce1_h.jpg" target="_blank">                
+                    <img src="https://c1.staticflickr.com/5/4241/34978053381_333e903ce1_h.jpg" alt="">                
+                </a>   
+                <div class="description">
+                    description about image gallery item
+                </div>         
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery-item">            
+                <a href="https://c1.staticflickr.com/5/4232/35013562671_860e601a9f_k.jpg" target="_blank">                
+                    <img src="https://c1.staticflickr.com/5/4232/35013562671_860e601a9f_k.jpg" alt="">                
+                </a>    
+                <div class="description">
+                    description about image gallery item
+                </div>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>
